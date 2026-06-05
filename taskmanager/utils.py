@@ -7,7 +7,13 @@ def format_task(task):
     due = task.get("due_date", "Sem prazo")
     return f"{get_status(task)} [{task['priority']}] #{task['id']} - {task['title']} (prazo: {due})"
 
-def filter_tasks(tasks, show_done=True):
-    if show_done:
-        return tasks
-    return [t for t in tasks if not t["done"]]
+def filter_tasks(tasks, show_done=True, priority=None):
+    result = tasks
+
+    if not show_done:
+        result = [t for t in result if not t["done"]]
+
+    if priority:
+        result = [t for t in result if t["priority"] == priority]
+
+    return result
