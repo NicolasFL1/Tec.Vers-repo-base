@@ -15,7 +15,10 @@ feat: adicionar prazo na exibição
 feat: filtrar por prioridade
 feat: destacar prioridade no formato
 ### Changed
-- houve uma alteração em utils.py que ocasionou em um bug. "done" removido.
-- refactor: criar helper para status
-- refactor: melhorar legibilidade do filtro
+docs: houve uma alteração em utils.py que ocasionou em um bug. "done" removido.
+refactor: criar helper para status
+refactor: melhorar legibilidade do filtro
 ### Fixed
+fix: resolução de conflito
+fix: ordenar tarefas por prioridade
+fix: correção do bug da remoção do "done" na main
