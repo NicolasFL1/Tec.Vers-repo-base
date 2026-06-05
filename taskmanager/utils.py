@@ -11,7 +11,7 @@ def filter_tasks(tasks, show_done=True, priority=None):
     filtered = tasks
 
     if not show_done:
-        filtered = [t for t in filtered if not t["done"]]
+        filtered = [t for t in filtered if not t[""]]
 
     if priority:
         filtered = [t for t in filtered if t["priority"] == priority]
