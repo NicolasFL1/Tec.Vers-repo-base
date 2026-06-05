@@ -10,6 +10,12 @@ O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
 ## [1.0.0] - 2026-06-05
 ### Added
+feat: exibir status concluído
+feat: adicionar prazo na exibição
+feat: filtrar por prioridade
+feat: destacar prioridade no formato
 ### Changed
 - houve uma alteração em utils.py que ocasionou em um bug. "done" removido.
+- refactor: criar helper para status
+- refactor: melhorar legibilidade do filtro
 ### Fixed
