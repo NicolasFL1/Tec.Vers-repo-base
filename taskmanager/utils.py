@@ -16,4 +16,4 @@ def filter_tasks(tasks, show_done=True, priority=None):
     if priority:
         filtered = [t for t in filtered if t["priority"] == priority]
 
-    return filtered
+    return sorted(filtered, key=lambda t: t["priority"])
