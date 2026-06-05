@@ -8,12 +8,12 @@ def format_task(task):
     return f"{get_status(task)} PRIORIDADE={task['priority']} | #{task['id']} | {task['title']} (prazo: {due})"
 
 def filter_tasks(tasks, show_done=True, priority=None):
-    result = tasks
+    filtered = tasks
 
     if not show_done:
-        result = [t for t in result if not t["done"]]
+        filtered = [t for t in filtered if not t["done"]]
 
     if priority:
-        result = [t for t in result if t["priority"] == priority]
+        filtered = [t for t in filtered if t["priority"] == priority]
 
-    return result
+    return filtered
