@@ -3,7 +3,7 @@
 ## Time
 - Tech Lead: Nicolas Fernandes Luiz
 - Dev A: Maria Eduarda Fernandes Rocha
-- Dev B: Igor Vinicius Alves da Sila
+- Dev B: Igor Vinicius Alves da Silva
 - QA/Release: Guilherme Bernardo De Souza
 
 ---
